@@ -1,0 +1,45 @@
+.bi-cloudy-fill {
+    width: 75px;
+    height: 75px;
+}
+
+/*header*/
+
+.contenedor-lista {
+    margin-left: 150px;
+}
+
+.titulo {
+    font-size: 170px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), -2px -2px 4px rgba(200, 200, 200, 0.4);
+    margin-top: -1050px;
+}
+
+/*section1*/
+
+.subtitulo {
+    margin-top: 950px;
+}
+
+/*section2*/
+
+.imagen-novedades1 {
+    width: 300px;
+    height: 200px;
+}
+
+/*section3*/
+
+.imagen-section3 {
+    width: 800px;
+    height: 500px;
+    margin-top: 200px;
+}
+
+/*section4*/
+
+.texto-novedades1 {
+    font-size: 30px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), -2px -2px 4px rgba(200, 200, 200, 0.4);
+    margin-top: 450px;
+}
