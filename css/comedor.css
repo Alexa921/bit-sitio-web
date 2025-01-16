@@ -1,0 +1,83 @@
+.bi-cloudy-fill {
+    width: 75px;
+    height: 75px;
+}
+
+/*header*/
+
+.titulo-header {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contenedor-lista {
+    margin-left: 500px;
+}
+
+/*section1*/
+
+.titulo-comedor {
+    font-size: 170px;
+    color: rgba(245, 245, 220, 0.921);
+    text-shadow: 3px 3px 6px rgba(82, 82, 82, 0.518), -2px -2px 4px rgba(99, 99, 99, 0.752);
+    margin-top: -1050px;
+}
+
+.texto-portada {
+    color: rgba(245, 245, 220, 0.983);
+    text-shadow: 3px 3px 6px rgba(98, 98, 98, 0.797), -2px -2px 4px rgba(90, 90, 90, 0.648);
+}
+
+/*section2*/
+
+.row-cols-1 {
+    margin-top: 1000px;
+    margin-left: 300px;
+    margin-bottom: 40px;
+    width: 1000px;
+}
+
+.col1 {
+    margin-left: 100px;
+}
+
+.col2 {
+    margin-left: 10px;
+}
+
+.col3 {
+    margin-top: -640px;
+    margin-left: 780px;
+}
+
+.col4 {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.col5 {
+    margin-top: -640px;
+    margin-left: 440px;
+}
+
+.col6 {
+    margin-top: -680px;
+    margin-left: 1090px;
+    width: 310px;
+}
+
+/*footer*/
+
+footer {
+    width: 1852px;
+    height: 300px;
+    margin-top: 200px;
+}
+
+hr {
+    margin-top: 50px;
+}
+
+.texto-footer {
+    margin-top: 40px;
+}
