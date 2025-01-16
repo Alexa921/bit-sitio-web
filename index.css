@@ -24,22 +24,98 @@
 /*section2*/
 
 .imagen-novedades1 {
-    width: 300px;
-    height: 200px;
+    width: 330px;
+    height: 230px;
 }
 
 /*section3*/
 
 .imagen-section3 {
-    width: 800px;
-    height: 500px;
+    width: 900px;
+    height: 600px;
     margin-top: 200px;
+    margin-bottom: 350px;
+}
+
+.texto-novedades1 {
+    font-size: 70px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), -2px -2px 4px rgba(0, 0, 0, 0.4);
+    margin-top: -700px;
+    margin-left: 220px;
+}
+
+.texto-novedades2 {
+    font-size: 70px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), -2px -2px 4px rgba(0, 0, 0, 0.4);
+    margin-top: -100px;
+    margin-left: 1200px;
 }
 
 /*section4*/
 
-.texto-novedades1 {
-    font-size: 30px;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), -2px -2px 4px rgba(200, 200, 200, 0.4);
-    margin-top: 450px;
+.row-cols-1 {
+    margin-top: 430px;
+    margin-bottom: 40px;
+    width: 1000px;
 }
+
+.col1 {
+    margin-left: 100px;
+}
+
+.col2 {
+    margin-left: 10px;
+}
+
+.col3 {
+    margin-top: -640px;
+    margin-left: 780px;
+}
+
+.col4 {
+    margin-top: -642px;
+    margin-left: 1115px;
+}
+
+.col5 {
+    margin-top: -645px;
+    margin-left: 1451px;
+}
+
+/*section5*/
+
+.texto-medio {
+    font-size: 90px;
+    margin-top: 200px;
+}
+
+/*section6*/
+
+.carousel {
+    width: 1300px;
+    height: 500px;
+    margin-top: 230px;
+    margin-left: 290px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), -2px -2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.carousel-control-prev, .carousel-control-next {
+    margin-top: 500px;
+}
+
+/*footer*/
+
+footer {
+    width: 1852px;
+    height: 300px;
+    margin-top: 550px;
+}
+
+hr {
+    margin-top: 50px;
+}
+
+.texto-footer {
+    margin-top: 40px;
+}
+
