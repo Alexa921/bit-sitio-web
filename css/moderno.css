@@ -1,0 +1,71 @@
+.bi-cloudy-fill {
+    width: 75px;
+    height: 75px;
+}
+
+/*header*/
+
+.contenedor-lista {
+    margin-left: 450px;
+}
+
+.titulo-header {
+    text-decoration: none;
+    color: inherit;
+}
+
+.titulo {
+    font-size: 170px;
+    color: rgba(245, 245, 220, 0.921);
+    text-shadow: 3px 3px 6px rgba(160, 160, 160, 0.4), -2px -2px 4px rgba(85, 85, 85, 0.583);
+    margin-top: -1050px;
+}
+
+.texto-portada {
+    color: rgba(245, 245, 220, 0.983);
+    text-shadow: 3px 3px 6px rgba(110, 110, 110, 0.736), -2px -2px 4px rgba(90, 90, 90, 0.651);
+}
+
+/*section1*/
+
+.subtitulo {
+    margin-top: 950px;
+}
+
+/*section2*/
+
+.coleccion1 {
+    width: 400px;
+    height: 300px;
+}
+
+.coleccion2 {
+    width: 400px;
+    height: 300px;
+}
+
+.coleccion3 {
+    width: 400px;
+    height: 300px;
+}
+
+.div1 {
+    margin-top: 1000px;
+}
+
+/*footer*/
+
+footer {
+    width: 1852px;
+    height: 300px;
+    margin-top: 200px;
+}
+
+hr {
+    margin-top: 50px;
+}
+
+.texto-footer {
+    margin-top: 40px;
+}
+

@@ -12,13 +12,13 @@
 .titulo {
     font-size: 170px;
     color: rgba(245, 245, 220, 0.921);
-    text-shadow: 3px 3px 6px rgba(160, 160, 160, 0.4), -2px -2px 4px rgba(255, 255, 255, 0.6);
+    text-shadow: 3px 3px 6px rgba(160, 160, 160, 0.4), -2px -2px 4px rgba(85, 85, 85, 0.583);
     margin-top: -1050px;
 }
 
 .texto-portada {
     color: rgba(245, 245, 220, 0.983);
-    text-shadow: 3px 3px 6px rgba(141, 141, 141, 0.594), -2px -2px 4px rgba(90, 90, 90, 0.434);
+    text-shadow: 3px 3px 6px rgba(110, 110, 110, 0.736), -2px -2px 4px rgba(90, 90, 90, 0.651);
 }
 
 /*section1*/
@@ -30,8 +30,8 @@
 /*section2*/
 
 .imagen-novedades1 {
-    width: 330px;
-    height: 230px;
+    width: 320px;
+    height: 220px;
 }
 
 /*section3*/
@@ -55,6 +55,11 @@
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), -2px -2px 4px rgba(0, 0, 0, 0.4);
     margin-top: -100px;
     margin-left: 1200px;
+}
+
+.imagen-moderno {
+    text-decoration: none;
+    color: inherit;
 }
 
 /*section4*/
