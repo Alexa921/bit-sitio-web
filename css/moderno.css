@@ -5,7 +5,7 @@
 
 /*header*/
 
-.contenedor-lista {
+.contenedor-lista1 {
     margin-left: 450px;
 }
 
@@ -14,7 +14,7 @@
     color: inherit;
 }
 
-.titulo {
+.titulo-moderno {
     font-size: 170px;
     color: rgba(245, 245, 220, 0.921);
     text-shadow: 3px 3px 6px rgba(160, 160, 160, 0.4), -2px -2px 4px rgba(85, 85, 85, 0.583);
@@ -49,6 +49,21 @@
     height: 300px;
 }
 
+.coleccion4 {
+    width: 400px;
+    height: 300px;
+}
+
+.coleccion5 {
+    width: 400px;
+    height: 300px;
+}
+
+.coleccion6 {
+    width: 400px;
+    height: 300px;
+}
+
 .div1 {
     margin-top: 1000px;
 }
@@ -68,4 +83,399 @@ hr {
 .texto-footer {
     margin-top: 40px;
 }
+
+/* Reglas generales para pantallas de 1024px */
+@media (max-width: 1024px) {
+    .bi-cloudy-fill {
+        width: 80px;
+        height: 80px;
+        margin-left: -340px;
+        margin-top: -70px;
+    }
+    /* Cabecera */
+    .titulo-header {
+        font-size: 20px;
+        margin-top: -70px;
+    }
+
+    .contenedor-lista1 {
+        margin-left: -155px;
+        margin-top: 100px;
+        font-size: 20px;
+    }
+
+    .contenedor-lista2 {
+        margin-left: 140px;
+        margin-top: 100px;
+        font-size: 20px;
+    }
+
+    .contenedor-lista3 {
+        margin-left: 200px;
+        margin-top: 100px;
+        font-size: 20px;
+    }
+
+    .contenedor-lista4 {
+        margin-left: 150px;
+        margin-top: 100px;
+        font-size: 20px;
+    }
+
+    .titulo {
+        font-size: 80px;
+        margin-top: -200px; 
+    }
+
+    .texto-portada {
+        font-size: 1.5rem; 
+        margin-top: 20px;
+    }
+
+    /* Sección 1*/
+    .titulo-moderno {
+        font-size: 90px;
+        margin-top: -500px;
+    }
+
+    .texto-portada {
+        font-size: 1.5rem;
+    }
+
+    /* Sección 2*/
+    .coleccion1 {
+        width: 300px;
+        height: 200px;
+        margin-top: -550px;
+        margin-left: 4px;
+    }
+    .coleccion2 {
+        width: 300px;
+        height: 200px;
+        margin-top: -550px;
+        margin-left: -40px;
+    }
+    .coleccion3 {
+        width: 300px;
+        height: 200px;
+        margin-top: -550px;
+        margin-left: -40px;
+    }
+    .coleccion4 {
+        width: 300px;
+        height: 200px;
+        margin-top: -350px;
+        margin-left: 4px;
+    }
+    .coleccion5 {
+        width: 300px;
+        height: 200px;
+        margin-top: -350px;
+        margin-left: -40px;
+    }
+
+    .coleccion6 {
+        width: 300px;
+        height: 200px;
+        margin-top: -350px;
+        margin-left: -40px;
+    }
+
+    /* Footer */
+    footer {
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        padding: 20px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .col {
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .texto-footer {
+        font-size: 0.9rem;
+        margin-top: 25px;
+    }
+
+    hr {
+        margin-top: 30px;
+    }
+}
+
+/* Reglas generales para pantallas de 768px */
+@media (max-width: 768px) {
+    /* Cabecera */
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .bi-cloudy-fill {
+        width: 80px;
+        height: 80px;
+        margin-left: 460px;
+        margin-top: -250px;
+    }
+    /* Cabecera */
+    .titulo-header {
+        font-size: 20px;
+        margin-top: -70px;
+    }
+
+    .contenedor-lista1 {
+        margin-right: -60px;
+        margin-top: 100px;
+        font-size: 18px;
+    }
+
+    .contenedor-lista2 {
+        margin-right: -120px;
+        margin-top: 100px;
+        font-size: 18px;
+    }
+
+    .contenedor-lista3 {
+        margin-right: 240px;
+        margin-top: 100px;
+        font-size: 18px;
+    }
+
+    .contenedor-lista4 {
+        margin-left: 560px;
+        margin-top: -78px;
+        font-size: 18px;
+    }
+
+    .titulo {
+        font-size: 50px;
+        margin-top: -100px; 
+    }
+
+    /* Sección 1*/
+    .titulo-moderno {
+        font-size: 60px;
+        margin-top: -300px;
+    }
+
+    .texto-portada {
+        font-size: 18px;
+    }
+
+    /* Sección 2*/
+    .coleccion1 {
+        width: 300px;
+        height: 200px;
+        margin-top: 250px;
+        margin-left: -360px;
+    }
+    .coleccion2 {
+        width: 300px;
+        height: 200px;
+        margin-top: -210px;
+        margin-left: 350px;
+    }
+    .coleccion3 {
+        width: 300px;
+        height: 200px;
+        margin-top: 50px;
+        margin-left: -370px;
+    }
+    .coleccion4 {
+        width: 300px;
+        height: 200px;
+        margin-top: -260px;
+        margin-left: 320px;
+    }
+    .coleccion5 {
+        width: 300px;
+        height: 200px;
+        margin-top: 10px;
+        margin-left: -740px;
+    }
+
+    .coleccion6 {
+        width: 300px;
+        height: 200px;
+        margin-top: 10px;
+        margin-left: -50px;
+    }
+
+    .div1 {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div1 img {
+        margin-bottom: 10px;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    /* Footer */
+    footer {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+        padding: 10px;
+    }
+
+    .row {
+        font-size: 16px;
+    }
+
+    .col {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .texto-footer {
+        font-size: 0.8rem;
+        margin-top: 20px;
+    }
+
+    hr {
+        margin-top: 20px;
+    }
+}
+
+/* Reglas generales para pantallas de 375px */
+@media (max-width: 375px) {
+    .bi-cloudy-fill {
+        width: 70px;
+        height: 70px;
+        margin-left: 250px;
+        margin-top: -60px;
+    }
+    .navbar {
+        height: 70px;
+    }
+
+    /* Header */
+    .titulo-header {
+        font-size: 40px;
+        margin-left: -10px;
+        margin-top: 10px;
+    }
+    .contenedor-lista1 {
+        display: none;
+    }
+
+    .contenedor-lista2 {
+        display: none;
+    }
+
+    .contenedor-lista3 {
+        display: none;
+    }
+
+    .contenedor-lista4 {
+        display: none;
+        margin-left: 150px;
+        color: rgb(255, 250, 241);
+    }
+
+    .titulo-moderno {
+        font-size: 40px;
+        margin-top: -200px;
+        text-align: center;
+    }
+
+    .texto-portada {
+        font-size: 12Spx;
+        text-align: center;
+    }
+
+    /* Sección 1 */
+    img.img-fluid {
+        width: 100%;
+        height: auto;
+    }
+
+    .titulo {
+        font-size: 30px;
+        margin-top: -30px;
+    }
+
+    /* Sección 2 - Colecciones */
+    .coleccion1 {
+        width: 250px;
+        height: 150px;
+        margin-left: 20px;
+    }
+    .coleccion2 {
+        width: 250px;
+        height: 150px;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    .coleccion3 {
+        width: 250px;
+        height: 150px;
+        margin-left: 20px;
+    }
+    .coleccion4,
+    .coleccion5,
+    .coleccion6 {
+        display: none;
+    }
+
+    .div1 {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div1 img {
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Footer */
+    footer {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .col {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .texto-footer {
+        font-size: 0.7rem;
+        margin-top: 16px;
+    }
+
+    hr {
+        margin-top: 15px;
+    }
+}
+
+
+
 
