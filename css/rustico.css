@@ -3,27 +3,45 @@
     height: 75px;
 }
 
-/*header*/
+/*nav*/
 
-.contenedor-lista1 {
-    margin-left: 450px;
+nav {
+    background-color: #fff; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.titulo-header {
+nav .logo {
+    height: 40px; 
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
     text-decoration: none;
-    color: inherit;
+    color: #333; 
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 2px;
 }
 
-.titulo-rustico {
-    font-size: 170px;
-    color: rgba(245, 245, 220, 0.921);
-    text-shadow: 3px 3px 6px rgba(160, 160, 160, 0.4), -2px -2px 4px rgba(85, 85, 85, 0.583);
-    margin-top: -1050px;
-}
-
-.texto-portada {
-    color: rgba(245, 245, 220, 0.983);
-    text-shadow: 3px 3px 6px rgba(222, 222, 222, 0.742), -2px -2px 4px rgba(181, 181, 181, 0.736);
+nav ul li a:hover {
+    color: #ffc107; 
+    border-bottom: 2px solid #ffc107;
 }
 
 /*section1*/

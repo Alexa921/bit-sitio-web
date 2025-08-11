@@ -3,16 +3,47 @@
     height: 75px;
 }
 
-/*header*/
+/*nav*/
 
-.titulo-header {
+nav {
+    background-color: #fff; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    height: 40px; 
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
     text-decoration: none;
-    color: inherit;
+    color: #333; 
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 2px;
 }
 
-.contenedor-lista1 {
-    margin-left: 500px;
+nav ul li a:hover {
+    color: #ffc107; 
+    border-bottom: 2px solid #ffc107;
 }
+
 
 /*section1*/
 
