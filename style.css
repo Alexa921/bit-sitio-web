@@ -1,8 +1,3 @@
-.bi-cloudy-fill {
-    width: 75px;
-    height: 75px;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +10,6 @@ body {
 
 /* NAVBAR */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.445);
     position: absolute;
     top: 0;
     width: 100%;
@@ -27,20 +21,23 @@ body {
 }
 
 .nav-left .logo {
-    font-size: 22px;
+    font-size: 25px;
     font-weight: normal;
+    font-family: 'Times New Roman', serif;
 }
 
 .nav-center {
     list-style: none;
     display: flex;
     gap: 25px;
+    margin-top: 10px;
 }
 .nav-center li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
     transition: color 0.3s ease;
+    font-family: 'Times New Roman', serif;
 }
 .nav-center li a:hover {
     color: #ddd;
@@ -66,8 +63,15 @@ body {
     color: white;
 }
 
+.nav-left a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+
 /* HERO */
 .hero {
+    position: relative; 
     background: url('img/portada-habitat.png') no-repeat center center/cover;
     height: 100vh;
     display: flex;
@@ -75,30 +79,48 @@ body {
     justify-content: center;
     text-align: center;
 }
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4); 
+    z-index: 1;
+}
+
 .hero-content {
     max-width: 600px;
+    position: relative; 
+    z-index: 2;
 }
+
 .hero-content h2 {
-    font-size: 70px;
+    font-size: 80px;
     line-height: 1.2;
     margin-bottom: 20px;
-    font-family: sans-serif;
+    font-family: 'Times New Roman', serif;
 }
 
 .btn {
     display: inline-block;
     background: #f5f5f5;
     color: black;
-    padding: 12px 25px;
+    padding: 15px 100px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
     transition: background 0.3s ease;
+    font-family: 'Times New Roman', serif;
 }
+
 .btn:hover {
     background: #a5a5a5;
 }
+
 /*section1*/
 /* SECCIÓN FAVORITOS */
 .favorites {
@@ -106,12 +128,14 @@ body {
     padding: 60px 40px;
     text-align: center;
     color: white;
+    font-family: 'Times New Roman', serif;
 }
 
 .favorites h2 {
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 50px;
     font-weight: normal;
+    font-family: 'Times New Roman', serif;
 }
 
 .favorites-grid {
@@ -149,6 +173,7 @@ body {
     border: none;
     cursor: pointer;
     transition: background 0.3s ease;
+    margin-top: 20px;
 }
 
 .favorite-item .btn:hover {
@@ -164,808 +189,250 @@ body {
 
 /*section3*/
 
-.imagen-section3 {
-    width: 900px;
-    height: 600px;
-    margin-top: 200px;
-    margin-bottom: 350px;
+/* SECCIÓN DIARIO */
+.diary {
+    background-color: #e6e6e6; 
+    padding: 60px 40px;
+    text-align: center;
+    color: black;
+    font-family: 'Times New Roman', serif;
 }
 
-.texto-novedades1 {
-    font-size: 70px;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), -2px -2px 4px rgba(0, 0, 0, 0.4);
-    margin-top: -700px;
-    margin-left: 220px;
+.diary h2 {
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-weight: normal;
 }
 
-.texto-novedades2 {
-    font-size: 70px;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), -2px -2px 4px rgba(0, 0, 0, 0.4);
-    margin-top: -100px;
-    margin-left: 1200px;
+.diary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
 }
 
-.imagen-moderno {
+.diary-item {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.diary-item img {
+    width: 70%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.diary-item h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.diary-item p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 400px;
+}
+
+.btn-black {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 12px 30px;
     text-decoration: none;
-    color: inherit;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.btn-black:hover {
+    background: #a5a5a5;
 }
 
 /*section4*/
-
-.row-cols-1 {
-    margin-top: 430px;
-    margin-bottom: 40px;
-    width: 1000px;
+/* SECCIÓN SUSCRIPCIÓN */
+.subscribe {
+    background: url('img/imagen-section4.png') center/cover no-repeat;
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    position: relative;
+    font-family: 'Times New Roman', serif;
 }
 
-.col1 {
-    margin-left: 100px;
+.subscribe::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.3); 
 }
 
-.col2 {
-    margin-left: 10px;
+.subscribe-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    max-width: 600px;
+    z-index: 1;
 }
 
-.col3 {
-    margin-top: -640px;
-    margin-left: 780px;
+.subscribe-content h2 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    font-weight: normal;
 }
 
-.col4 {
-    margin-top: -642px;
-    margin-left: 1115px;
+.subscribe-content p {
+    font-size: 16px;
+    margin-bottom: 25px;
 }
 
-.col5 {
-    margin-top: -645px;
-    margin-left: 1451px;
+.subscribe form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.subscribe input[type="email"] {
+    padding: 14px 20px;
+    font-size: 14px;
+    border: none;
+    width: 300px;
+    max-width: 100%;
+}
+
+.subscribe button {
+    padding: 12px 25px;
+    background: #d9d9d9;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.subscribe button:hover {
+    background: #a5a5a5;
 }
 
 /*section5*/
-
-.texto-medio {
-    font-size: 90px;
-    margin-top: 200px;
+/* SECCIÓN 5 - GIFT CARD */
+.gift-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    background: #d9d9d9;
+    padding: 60px 20px;
+    font-family: 'Times New Roman', serif;
 }
 
-/*section6*/
-
-.carousel {
-    width: 1300px;
-    height: 500px;
-    margin-top: 230px;
-    margin-left: 290px;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), -2px -2px 4px rgba(0, 0, 0, 0.4);
+.gift-card-img {
+    position: relative;
 }
 
-.carousel-control-prev, .carousel-control-next {
-    margin-top: 500px;
+.gift-card-img img {
+    width: 60%;
+    display: block;
+    margin-left: 200px;
 }
 
-/*footer*/
-
-footer {
-    width: 1852px;
-    height: 300px;
-    margin-top: 550px;
+.gift-card-info h2 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    font-weight: normal;
+    color: black;
 }
 
-hr {
-    margin-top: 50px;
+.gift-card-info p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    color: black;
 }
 
-.texto-footer {
-    margin-top: 40px;
+.btn-black {
+    background: black;
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    transition: background 0.3s ease;
 }
 
-/* Estilos responsive para 1440px */
-@media (max-width: 1440px) {
-    body {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    .bi-cloudy-fill {
-        width: 70px;
-        height: 70px;
-    }
-
-    /* Header */
-    .contenedor-lista {
-        margin-left: 20px;
-        font-size: 20px;
-    }
-
-    .titulo {
-        font-size: 150px;
-        margin-top: -500px;
-    }
-
-    .texto-portada {
-        font-size: 30px;
-    }
-
-    /* Section 1 */
-    .subtitulo {
-        margin-top: 400px;
-        font-size: 38px;
-    }
-
-    /* Section 2 */
-    .imagen-novedades-coleccion1 {
-        width: 200px;
-        height: 150px;
-    }
-
-    /* Section 3 */
-    .imagen-section3 {
-        width: 500px;
-        height: 350px;
-        margin-top: 200px;
-        margin-bottom: 50px;
-    }
-
-    .texto-novedades1 {
-        font-size: 34px;
-        margin-top: -220px;
-        margin-left: 250px;
-    }
-
-    .texto-novedades2 {
-        font-size: 34px;
-        margin-top: -80px;
-        margin-left: 990px;
-    }
-
-    /* Section 4 */
-    .row-cols-1 {
-        margin-top: 270px;
-        margin-bottom: 20px;
-        width: auto;
-    }
-
-    .col1, .col2, .col3, .col4, .col5 {
-        width: 270px;
-        height: 580px;
-        margin-left: 18px;
-        margin-top: 20px;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .ocultar {
-        display: none;
-    }
-
-    .visible {
-        display: none;
-    }
-
-    .visible3 {
-        display: block;
-    }
-
-    /* Section 5 */
-    .texto-medio {
-        font-size: 60px;
-        margin-top: 150px;
-        margin-bottom: 150px;
-    }
-
-    /* Section 6 */
-    .carousel {
-        width: 100%;
-        height: auto;
-        margin-top: 20px;
-        margin-left: 0;
-    }
-
-    .carousel-control-prev, .carousel-control-next {
-        margin-top: 0;
-    }
-
-    /* Footer */
-    footer {
-        width: 100%;
-        height: auto;
-        margin-top: 20px;
-    }
-
-    hr {
-        margin-top: 10px;
-    }
-
-    .texto-footer {
-        margin-top: 10px;
-        font-size: 14px;
-    }
-}
-/* Estilos responsive para 1024px */
-@media (max-width: 1024px) {
-    body {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    .bi-cloudy-fill {
-        width: 70px;
-        height: 70px;
-    }
-
-    /* Header */
-    .contenedor-lista {
-        margin-left: 20px;
-        font-size: 20px;
-    }
-
-    .titulo {
-        font-size: 100px;
-        margin-top: -500px;
-    }
-
-    .texto-portada {
-        font-size: 20px;
-    }
-
-    /* Section 1 */
-    .subtitulo {
-        margin-top: 400px;
-        font-size: 32px;
-    }
-
-    /* Section 2 */
-    .imagen-novedades-coleccion1 {
-        width: 160px;
-        height: 110px;
-    }
-
-    /* Section 3 */
-    .imagen-section3 {
-        width: 450px;
-        height: 300px;
-        margin-top: 200px;
-        margin-bottom: 50px;
-    }
-
-    .texto-novedades1 {
-        font-size: 28px;
-        margin-top: -200px;
-        margin-left: 170px;
-    }
-
-    .texto-novedades2 {
-        font-size: 28px;
-        margin-top: -50px;
-        margin-left: 700px;
-    }
-
-    /* Section 4 */
-    .row-cols-1 {
-        margin-top: 270px;
-        margin-bottom: 20px;
-        width: auto;
-    }
-
-    .col1, .col2, .col3, .col4, .col5 {
-        width: 190px;
-        height: 500px;
-        margin-left: 15px;
-        margin-top: 20px;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .ocultar {
-        display: none;
-    }
-
-    .visible {
-        display: none;
-    }
-
-    /* Section 5 */
-    .texto-medio {
-        font-size: 60px;
-        margin-top: 150px;
-        margin-bottom: 150px;
-    }
-
-    /* Section 6 */
-    .carousel {
-        width: 100%;
-        height: auto;
-        margin-top: 20px;
-        margin-left: 0;
-    }
-
-    .carousel-control-prev, .carousel-control-next {
-        margin-top: 0;
-    }
-
-    /* Footer */
-    footer {
-        width: 100%;
-        height: auto;
-        margin-top: 20px;
-    }
-
-    hr {
-        margin-top: 10px;
-    }
-
-    .texto-footer {
-        margin-top: 10px;
-        font-size: 14px;
-    }
+.btn-black:hover {
+    background: #a5a5a5;
 }
 
-/* Estilos responsive para 768px */
-@media (max-width: 768px) {
-    body {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    .bi-cloudy-fill {
-        width: 60px;
-        height: 60px;
-        margin-top: -200px;
-        margin-left: 600px;
-    }
-
-    /* Header */
-    .titulo-header {
-        font-size: 26px;
-    }
-
-    .contenedor-lista {
-        margin-left: 0px;
-        font-size: 18px;
-    }
-
-    .contenedor-lista1 {
-        margin-left: 10px;
-    }
-
-    .contenedor-lista3 {
-        margin-right: 230px;
-    }
-
-    .contenedor-lista4 {
-        margin-top: -74px;
-       margin-left: 630px;
-    }
-
-    .titulo {
-        font-size: 90px;
-        margin-top: -300px;
-    }
-
-    .texto-portada {
-        font-size: 28px;
-    }
-
-    /* Section 1 */
-    .subtitulo {
-        margin-top: 200px;
-        font-size: 30px;
-    }
-
-    /* Section 2 */
-    .imagen-novedades-coleccion1 {
-        width: 125px;
-        height: 85px;
-    }
-
-    /* Section 3 */
-    .imagen-section3 {
-        width: 330px;
-        height: 220px;
-        margin-top: 100px;
-        margin-bottom: 30px;
-    }
-
-    .texto-novedades1 {
-        font-size: 20px;
-        margin-top: -150px;
-        margin-left: 120px;
-    }
-
-    .texto-novedades2 {
-        font-size: 20px;
-        margin-top: -50px;
-        margin-left: 520px;
-    }
-
-    /* Section 4 */
-
-    .row-cols-1 {
-        margin-top: 220px;
-        margin-bottom: 10px;
-        width: auto;
-    }
-
-    .col1, .col2 {
-        width: 200px;
-        height: 500px;
-        margin-left: 45px;
-        margin-top: 10px;
-    }
-
-    .col3 {
-        width: 200px;
-        height: 570px;
-        margin-left: 40px;
-    }
-
-    .col4 {
-        width: 200px;
-        height: 500px;
-        margin-left: 200px;
-    }
-
-    .col5 {
-        width: 200px;
-        height: 500px;
-        margin-top: 20px;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .ocultar {
-        display: none;
-    }
-
-    .visible {
-        display: block;
-    }
-
-    .visible3 {
-        display: none;
-    }
-
-    /* Section 5 */
-    .texto-medio {
-        font-size: 50px;
-        margin-top: 100px;
-    }
-
-    /* Section 6 */
-    .carousel {
-        width: 100%;
-        height: auto;
-        margin-top: 10px;
-        margin-bottom: 150px;
-        margin-left: 0;
-    }
-
-    .carousel-control-prev, .carousel-control-next {
-        margin-top: 0;
-    }
-
-    /* Footer */
-    footer {
-        width: 100%;
-        height: auto;
-        margin-top: 10px;
-    }
-
-    hr {
-        margin-top: 5px;
-    }
-
-    .texto-footer {
-        margin-top: 5px;
-        font-size: 12px;
-    }
-}
-/* Estilos responsive para 425px */
-@media (max-width: 425px) {
-    .bi-cloudy-fill {
-        width: 70px;
-        height: 70px;
-        margin-left: 180px;
-    }
-
-    /* Header */
-    .titulo-header {
-        font-size: 24px;
-    }
-
-    .contenedor-lista {
-        margin-left: 0px;
-        font-size: 16px;
-    }
-
-    .contenedor-lista1 {
-        margin-left: -5px;
-    }
-
-    .contenedor-lista2 {
-        margin-left: -30px;
-    }
-
-    .contenedor-lista3 {
-        margin-right: 90px;
-    }
-
-    .contenedor-lista4 {
-        margin-top: -75px;
-       margin-left: 320px;
-    }
-
-    .titulo {
-        font-size: 60px;
-        margin-top: -200px;
-        text-align: center;
-    }
-
-    .texto-portada {
-        font-size: 14px;
-        text-align: center;
-    }
-
-    /* Section 1 */
-    .subtitulo {
-        margin-top: 90px;
-        font-size: 22px;
-    }
-
-    /* Section 2 */
-    .novedades {
-        display: flex;
-        flex-direction: column;
-        margin-left: 80px;
-    }
-
-    .imagen-novedades-coleccion1 {
-        width: 230px;
-        height: 170px;
-    }
-
-    /* Section 3 */
-    .contenedor-duo {
-        display: flex;
-        flex-direction: column;
-        margin-left: 50px;
-        margin-top: 80px;
-    }
-
-    .imagen-section3 {
-        width: 340px;
-        height: 250px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .texto-novedades1 {
-        font-size: 30px;
-        margin-top: -450px;
-        margin-left: 120px;
-    }
-
-    .texto-novedades2 {
-        font-size: 30px;
-        margin-top: 250px;
-        margin-left: 130px;
-    }
-
-    /* Section 4 */
-    .row-cols-1 {
-        margin-top: 5px;
-        margin-bottom: 5px;
-        width: auto;
-    }
-
-    .col1, .col2, .col3, .col4, .col5 {
-        margin-left: 90px;
-        margin-top: 200px;
-        width: 250px;
-        height: 540px;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    /* Section 5 */
-    .texto-medio {
-        font-size: 25px;
-        margin-top: 150px;
-    }
-
-    /* Section 6 */
-    .carousel {
-        width: 100%;
-        height: auto;
-        margin-top: 5px;
-        margin-left: 0;
-    }
-
-    .carousel-control-prev, .carousel-control-next {
-        margin-top: 0;
-    }
-
-    /* Footer */
-    footer {
-        width: 100%;
-        height: auto;
-        margin-top: 5px;
-    }
-
-    .row {
-        font-size: 12px;
-        margin-left: 5px;
-    }
-
-    hr {
-        margin-top: 5px;
-    }
-
-    .texto-footer {
-        margin-top: 5px;
-        font-size: 14px;
-    }
+/* FOOTER */
+.footer {
+    background-color: #121212;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    font-family: 'Times New Roman', serif;
 }
 
-/* Estilos responsive para 375px */
-@media (max-width: 375px) {
-    .bi-cloudy-fill {
-        width: 70px;
-        height: 70px;
-        margin-left: 180px;
-    }
-
-    /* Header */
-    .titulo-header {
-        font-size: 24px;
-    }
-
-    .contenedor-lista {
-        margin-left: 0px;
-        font-size: 16px;
-    }
-
-    .contenedor-lista1 {
-        margin-left: -5px;
-    }
-
-    .contenedor-lista2 {
-        margin-left: -30px;
-    }
-
-    .contenedor-lista3 {
-        margin-right: 90px;
-    }
-
-    .contenedor-lista4 {
-        margin-top: -75px;
-       margin-left: 290px;
-    }
-
-    .titulo {
-        font-size: 60px;
-        margin-top: -200px;
-        text-align: center;
-    }
-
-    .texto-portada {
-        font-size: 14px;
-        text-align: center;
-    }
-
-    /* Section 1 */
-    .subtitulo {
-        margin-top: 90px;
-        font-size: 22px;
-    }
-
-    /* Section 2 */
-    .novedades {
-        display: flex;
-        flex-direction: column;
-        margin-left: 50px;
-    }
-
-    .imagen-novedades-coleccion1 {
-        width: 230px;
-        height: 170px;
-    }
-
-    /* Section 3 */
-    .contenedor-duo {
-        display: flex;
-        flex-direction: column;
-        margin-left: 20px;
-        margin-top: 80px;
-    }
-
-    .imagen-section3 {
-        width: 340px;
-        height: 250px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .texto-novedades1 {
-        font-size: 30px;
-        margin-top: -450px;
-        margin-left: 80px;
-    }
-
-    .texto-novedades2 {
-        font-size: 30px;
-        margin-top: 250px;
-        margin-left: 90px;
-    }
-
-    /* Section 4 */
-    .row-cols-1 {
-        margin-top: 5px;
-        margin-bottom: 5px;
-        width: auto;
-    }
-
-    .col1, .col2, .col3, .col4, .col5 {
-        margin-left: 60px;
-        margin-top: 200px;
-        width: 250px;
-        height: 540px;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    /* Section 5 */
-    .texto-medio {
-        font-size: 25px;
-        margin-top: 150px;
-    }
-
-    /* Section 6 */
-    .carousel {
-        width: 100%;
-        height: auto;
-        margin-top: 5px;
-        margin-left: 0;
-    }
-
-    .carousel-control-prev, .carousel-control-next {
-        margin-top: 0;
-    }
-
-    /* Footer */
-    footer {
-        width: 100%;
-        height: auto;
-        margin-top: 5px;
-    }
-
-    .row {
-        font-size: 12px;
-        margin-left: 5px;
-    }
-
-    hr {
-        margin-top: 5px;
-    }
-
-    .texto-footer {
-        margin-top: 5px;
-        font-size: 14px;
-    }
+.footer-left h3 {
+    font-size: 35px;
+    margin-left: 50px;
+    margin-bottom: 10px;
 }
+
+.footer-left a {
+    color: white;
+    text-decoration: underline;
+    font-size: 14px;
+    margin-left: 50px;
+}
+
+.footer-social {
+    margin-top: 15px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px; 
+    margin-right: 18px;
+    transition: color 0.3s ease;
+    padding-left: -10px;
+}
+
+.social-icons a:hover {
+    color: #ccc;
+}
+
+
+.footer-right {
+    display: flex;
+    gap: 60px;
+    margin-right: 50px;
+}
+
+.footer-right a {
+    color: white;
+    font-size: 18px;
+    text-decoration: underline;
+    line-height: 1.8;
+}
+
+.footer-right a:hover,
+.footer-left a:hover {
+    opacity: 0.7;
+}
+
+
+
+
 
