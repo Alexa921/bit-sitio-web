@@ -2,6 +2,12 @@ body {
     background-color: #1a1a1a;
 }
 
+.nav-right span {
+    color: white;
+    margin-top: 10px;
+    margin-left: -10px;
+}
+
 /* NAVBAR */
 .navbar {
     position: absolute;
@@ -12,22 +18,13 @@ body {
     align-items: center;
     padding: 20px 50px;
     z-index: 10;
-    font-family: 'Times New Roman', serif;
 }
-
-h1 {
-    color: white;
-}
-
-.nav-left a {
-    text-decoration: none;
-    color: inherit; 
-}
-
 
 .nav-left .logo {
-    font-size: 25px;
+    font-size: 35px;
     font-weight: normal;
+    font-family: 'Times New Roman', serif;
+    color: white;
 }
 
 .nav-center {
@@ -36,12 +33,15 @@ h1 {
     gap: 25px;
     margin-top: 10px;
 }
+
 .nav-center li a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 22px;
     transition: color 0.3s ease;
+    font-family: 'Times New Roman', serif;
 }
+
 .nav-center li a:hover {
     color: #ddd;
 }
@@ -51,19 +51,23 @@ h1 {
     align-items: center;
     gap: 15px;
 }
+
 .nav-right a {
     text-decoration: none;
     color: white;
-    font-size: 18px; 
+    font-size: 25px; 
+    margin-top: -15px;
 }
+
 .icon {
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
     filter: brightness(0) invert(1); 
 }
-.cart-count {
-    font-size: 16px; 
-    color: white;
+
+.nav-left a {
+    text-decoration: none;
+    color: inherit; 
 }
 
 /* HERO */
@@ -77,13 +81,13 @@ h1 {
 }
 
 .tienda-section h2 {
-    font-size: 50px;
+    font-size: 60px;
     margin-top: 100px;
     margin-bottom: 10px;
 }
 
 .tienda-descripcion {
-    font-size: 16px;
+    font-size: 18px;
     max-width: 700px;
     margin: 0 auto 50px auto;
     line-height: 1.6;
@@ -162,11 +166,11 @@ h1 {
     color: #ccc;
 }
 
-
 .footer-right {
     display: flex;
     gap: 60px;
     margin-right: 50px;
+    margin-top: 30px;
 }
 
 .footer-right a {

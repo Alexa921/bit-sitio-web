@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/carrito.css">
+    <title>Carrito de compras</title>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-left">
+        <a href="/index.html"><h1 class="logo">Habitat</h1></a>
+    </div>
+    <ul class="nav-center">
+        <li><a href="/tienda.html">Tienda</a></li>
+        <li><a href="/nuestra-historia.html">Nuestra historia</a></li>
+        <li><a href="/diario.html">Diario</a></li>
+        <li><a href="/contacto.html">Contacto</a></li>
+    </ul>
+    <div class="nav-right">
+        <a href="https://instagram.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="Instagram" class="icon"></a>
+        <a href="https://facebook.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="Facebook" class="icon"></a>
+        <a href="https://twitter.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384017.png" alt="Twitter" class="icon"></a>
+        <a href="/carrito.html"><img src="https://cdn-icons-png.flaticon.com/512/1170/1170576.png" alt="Carrito" class="icon"></a>
+        <span id="contador">0</span>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero"></header>
+
+<section class="carrito">
+    <h2>Carrito de compra</h2>
+    <div id="lista-carrito"></div>
+    <div class="total">
+        <span>Subtotal:</span>
+        <span id="subtotal"></span>
+    </div>
+    <button class="pagar">Área de pago</button>
+</section>
+
+<footer class="footer">
+    <div class="footer-left">
+        <h3>Habitat</h3>
+        <a href="https://github.com/Alexa921" target="_blank">Hecho por Alexandra Restrepo</a>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <div class="footer-right">
+        <div>
+            <a href="/tienda.html">Tienda</a><br>
+            <a href="/nuestra-historia.html">Nuestra historia</a>
+        </div>
+        <div>
+            <a href="/diario.html">Diario</a><br>
+            <a href="/contacto.html">Contacto</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    let listaCarrito = document.getElementById("lista-carrito");
+    let subtotalElem = document.getElementById("subtotal");
+    let contadorElem = document.getElementById("contador");
+
+    function actualizarContador() {
+        contadorElem.textContent = carrito.length;
+    }
+
+    function renderCarrito() {
+        if (carrito.length === 0) {
+            listaCarrito.innerHTML = "<p>Tu carrito está vacío.</p>";
+            subtotalElem.textContent = "0,00 €";
+            actualizarContador();
+            return;
+        }
+
+        let subtotal = 0;
+        listaCarrito.innerHTML = carrito.map((item, index) => {
+            let precioTotal = item.precio * item.cantidad;
+            subtotal += precioTotal;
+
+            return `
+            <div class="producto-carrito">
+                <img src="${item.imagen}" alt="${item.nombre}">
+                <div>
+                    <h3>${item.nombre}</h3>
+                    <p>Tamaño: ${item.tamano}</p>
+                </div>
+                <div>
+                    <span>${item.cantidad}</span>
+                </div>
+                <div>
+                    <span>${precioTotal.toFixed(2)} €</span>
+                </div>
+                <div>
+                    <button class="eliminar" data-index="${index}">Eliminar</button>
+                </div>
+            </div>
+            `;
+        }).join("");
+
+        subtotalElem.textContent = `${subtotal.toFixed(2)} €`;
+
+        document.querySelectorAll(".eliminar").forEach(boton => {
+            boton.addEventListener("click", (e) => {
+                let index = e.target.getAttribute("data-index");
+                carrito.splice(index, 1);
+                localStorage.setItem("carrito", JSON.stringify(carrito));
+                renderCarrito();
+            });
+        });
+
+        actualizarContador();
+    }
+
+    renderCarrito();
+});
+</script>
+
+<script src="carrito.js"></script>
+</body>
+</html>

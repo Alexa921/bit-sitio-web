@@ -8,6 +8,12 @@ body {
     color: white;
 }
 
+.nav-right span {
+    color: white;
+    margin-top: 10px;
+    margin-left: -10px;
+}
+
 /* NAVBAR */
 .navbar {
     position: absolute;
@@ -21,9 +27,10 @@ body {
 }
 
 .nav-left .logo {
-    font-size: 25px;
+    font-size: 35px;
     font-weight: normal;
     font-family: 'Times New Roman', serif;
+    color: white;
 }
 
 .nav-center {
@@ -32,13 +39,15 @@ body {
     gap: 25px;
     margin-top: 10px;
 }
+
 .nav-center li a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 22px;
     transition: color 0.3s ease;
     font-family: 'Times New Roman', serif;
 }
+
 .nav-center li a:hover {
     color: #ddd;
 }
@@ -48,26 +57,24 @@ body {
     align-items: center;
     gap: 15px;
 }
+
 .nav-right a {
     text-decoration: none;
     color: white;
-    font-size: 18px; 
+    font-size: 25px; 
+    margin-top: -15px;
 }
+
 .icon {
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
     filter: brightness(0) invert(1); 
-}
-.cart-count {
-    font-size: 16px; 
-    color: white;
 }
 
 .nav-left a {
     text-decoration: none;
     color: inherit; 
 }
-
 
 /* HERO */
 .hero {
@@ -98,6 +105,10 @@ body {
     color: white;
 }
 
+.hero-content p {
+    margin-bottom: 40px;
+}
+
 .hero-content h2 {
     font-size: 80px;
     line-height: 1.2;
@@ -120,6 +131,72 @@ body {
 
 .btn:hover {
     background: #a5a5a5;
+}
+
+ /* ===== Estilos del Modal ===== */
+.modal-contacto {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contento {
+    background: #fff;
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 5px;
+    position: relative;
+    font-family: serif;
+}
+
+.modal-contento h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.modal-contento input,
+.modal-contento textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+form label {
+    color: black;
+}
+
+form label span {
+    color: rgb(102, 102, 102);
+}
+
+.modal-contento .cerrar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.btn-enviar {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-enviar:hover {
+    background: #333;
 }
 
 
@@ -167,11 +244,11 @@ body {
     color: #ccc;
 }
 
-
 .footer-right {
     display: flex;
     gap: 60px;
     margin-right: 50px;
+    margin-top: 30px;
 }
 
 .footer-right a {

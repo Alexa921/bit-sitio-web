@@ -8,6 +8,12 @@ body {
     color: white;
 }
 
+.nav-right span {
+    color: white;
+    margin-top: 10px;
+    margin-left: -10px;
+}
+
 /* NAVBAR */
 .navbar {
     position: absolute;
@@ -21,7 +27,7 @@ body {
 }
 
 .nav-left .logo {
-    font-size: 25px;
+    font-size: 35px;
     font-weight: normal;
     font-family: 'Times New Roman', serif;
 }
@@ -35,7 +41,7 @@ body {
 .nav-center li a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 22px;
     transition: color 0.3s ease;
     font-family: 'Times New Roman', serif;
 }
@@ -51,23 +57,19 @@ body {
 .nav-right a {
     text-decoration: none;
     color: white;
-    font-size: 18px; 
+    font-size: 25px; 
+    margin-top: -15px;
 }
 .icon {
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
     filter: brightness(0) invert(1); 
-}
-.cart-count {
-    font-size: 16px; 
-    color: white;
 }
 
 .nav-left a {
     text-decoration: none;
     color: inherit; 
 }
-
 
 /* HERO */
 .hero {
@@ -132,10 +134,11 @@ body {
 }
 
 .favorites h2 {
-    font-size: 50px;
+    font-size: 60px;
     margin-bottom: 50px;
     font-weight: normal;
     font-family: 'Times New Roman', serif;
+    margin-top: 60px;
 }
 
 .favorites-grid {
@@ -174,6 +177,7 @@ body {
     cursor: pointer;
     transition: background 0.3s ease;
     margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 .favorite-item .btn:hover {
@@ -188,7 +192,6 @@ body {
 }
 
 /*section3*/
-
 /* SECCIÓN DIARIO */
 .diary {
     background-color: #e6e6e6; 
@@ -199,7 +202,7 @@ body {
 }
 
 .diary h2 {
-    font-size: 50px;
+    font-size: 60px;
     margin-bottom: 50px;
     font-weight: normal;
 }
@@ -224,13 +227,13 @@ body {
 }
 
 .diary-item h3 {
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 15px;
     font-weight: normal;
 }
 
 .diary-item p {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
     max-width: 400px;
@@ -280,7 +283,7 @@ body {
 }
 
 .subscribe-content h2 {
-    font-size: 50px;
+    font-size: 55px;
     margin-bottom: 15px;
     font-weight: normal;
 }
@@ -342,8 +345,8 @@ body {
 }
 
 .gift-card-info h2 {
-    font-size: 50px;
-    margin-bottom: 15px;
+    font-size: 55px;
+    margin-bottom: 20px;
     font-weight: normal;
     color: black;
 }
@@ -413,11 +416,11 @@ body {
     color: #ccc;
 }
 
-
 .footer-right {
     display: flex;
     gap: 60px;
     margin-right: 50px;
+    margin-top: 30px;
 }
 
 .footer-right a {

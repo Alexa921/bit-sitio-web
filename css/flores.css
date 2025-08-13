@@ -2,6 +2,12 @@ body {
     background-color: #1a1a1a;
 }
 
+.nav-right span {
+    color: white;
+    margin-top: 10px;
+    margin-left: -10px;
+}
+
 /* NAVBAR */
 .navbar {
     position: absolute;
@@ -12,22 +18,13 @@ body {
     align-items: center;
     padding: 20px 50px;
     z-index: 10;
-    font-family: 'Times New Roman', serif;
 }
-
-h1 {
-    color: white;
-}
-
-.nav-left a {
-    text-decoration: none;
-    color: inherit; 
-}
-
 
 .nav-left .logo {
-    font-size: 25px;
+    font-size: 35px;
     font-weight: normal;
+    font-family: 'Times New Roman', serif;
+    color: white;
 }
 
 .nav-center {
@@ -36,12 +33,15 @@ h1 {
     gap: 25px;
     margin-top: 10px;
 }
+
 .nav-center li a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 22px;
     transition: color 0.3s ease;
+    font-family: 'Times New Roman', serif;
 }
+
 .nav-center li a:hover {
     color: #ddd;
 }
@@ -51,19 +51,23 @@ h1 {
     align-items: center;
     gap: 15px;
 }
+
 .nav-right a {
     text-decoration: none;
     color: white;
-    font-size: 18px; 
+    font-size: 25px; 
+    margin-top: -15px;
 }
+
 .icon {
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
     filter: brightness(0) invert(1); 
 }
-.cart-count {
-    font-size: 16px; 
-    color: white;
+
+.nav-left a {
+    text-decoration: none;
+    color: inherit; 
 }
 
 /* HERO */
@@ -77,7 +81,7 @@ h1 {
 }
 
 .flowers-intro .post-meta {
-    font-size: 14px;
+    font-size: 16px;
     color: #ccc;
     margin-top: 150px;
     margin-bottom: 10px;
@@ -85,7 +89,7 @@ h1 {
 }
 
 .flowers-intro .post-title {
-    font-size: 48px;
+    font-size: 55px;
     font-family: 'Times New Roman', serif;
     margin-top: 50px;
     margin-bottom: 40px;
@@ -106,65 +110,66 @@ h1 {
     font-size: 16px;
     line-height: 1.8;
     color: white;
+    font-size: 18px;
 }
 
 /* SECTION2 */
 
 .seccion-flores {
-  height: 40vh;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-family: 'Times New Roman', serif;
+    height: 40vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Times New Roman', serif;
 }
 
 /* Estilo para el perfil */
 .perfil {
-  text-align: center;
-  font-family: 'Times New Roman', serif;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
 }
 
 .perfil img {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
 .perfil p {
-  font-weight: bold;
-  font-size: 1rem;
-  margin-bottom: 150px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 150px;
 }
 
 /* Estilo para el enlace */
 .enlace-suculentas {
-  position: absolute;
-  bottom: 40px;
-  right: 40px;
-  font-family: 'Times New Roman', serif;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    font-family: 'Times New Roman', serif;
 }
 
 .enlace-suculentas a {
-  font-size: 2rem;
-  color: white;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .enlace-suculentas a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .flecha {
-  font-size: 2.5rem;
-  line-height: 1;
+    font-size: 2.5rem;
+    line-height: 1;
 }
 
 /* FOOTER */
@@ -211,11 +216,11 @@ h1 {
     color: #ccc;
 }
 
-
 .footer-right {
     display: flex;
     gap: 60px;
     margin-right: 50px;
+    margin-top: 30px;
 }
 
 .footer-right a {
