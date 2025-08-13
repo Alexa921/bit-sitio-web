@@ -435,6 +435,141 @@ body {
     opacity: 0.7;
 }
 
+/* ======= Responsive ======= */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 15px 30px;
+    }
+
+    .hero-content h2 {
+        font-size: 60px;
+    }
+
+    .favorites h2,
+    .diary h2,
+    .subscribe-content h2,
+    .gift-card-info h2 {
+        font-size: 45px;
+    }
+
+    .gift-card-img img {
+        margin-left: 100px;
+        width: 80%;
+    }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+    /* Navbar */
+    .nav-center {
+        display: none; /* Ocultamos el menú para reemplazarlo por icono si deseas */
+    }
+    .navbar {
+        padding: 10px 20px;
+    }
+    .nav-left .logo {
+        font-size: 28px;
+    }
+
+    /* Hero */
+    .hero-content h2 {
+        font-size: 40px;
+    }
+    .btn {
+        padding: 12px 40px;
+        font-size: 16px;
+    }
+
+    /* Favorites */
+    .favorites {
+        padding: 40px 20px;
+    }
+    .favorites h2 {
+        font-size: 35px;
+    }
+    .favorite-item img {
+        max-width: 250px;
+    }
+
+    /* Section 2 */
+    .img-section2 {
+        height: auto;
+    }
+
+    /* Diary */
+    .diary {
+        padding: 40px 20px;
+    }
+    .diary h2 {
+        font-size: 35px;
+    }
+    .diary-item h3 {
+        font-size: 24px;
+    }
+
+    /* Subscribe */
+    .subscribe-content h2 {
+        font-size: 35px;
+    }
+    .subscribe form {
+        width: 100%;
+    }
+    .subscribe input[type="email"] {
+        width: 100%;
+    }
+
+    /* Gift Card */
+    .gift-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .gift-card-img img {
+        margin: 0 auto;
+        width: 70%;
+    }
+    .gift-card-info h2 {
+        font-size: 35px;
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .footer-left h3,
+    .footer-left a {
+        margin-left: 0;
+    }
+    .footer-right {
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+    }
+}
+
+/* Teléfonos pequeños */
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 40px;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .favorites h2,
+    .diary h2,
+    .subscribe-content h2,
+    .gift-card-info h2 {
+        font-size: 28px;
+    }
+    .favorite-item img {
+        max-width: 200px;
+    }
+}
+
 
 
 
